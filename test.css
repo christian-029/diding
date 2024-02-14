@@ -11,7 +11,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	font-family: 'Montserrat', sans-serif;
+	font-family:'Verdana, Geneva, Tahoma, sans-serif';
     background-color: lightpink;
 }
 .wrapper {
@@ -22,7 +22,7 @@ body {
 
 .card {
 	width: 300px;
-	height: 500px;
+	height: 550px;
 	margin: 1em;
 	perspective: 1500px;
 	.content {
@@ -95,6 +95,7 @@ body {
 		font-weight: 500;
 		text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 	}
+    
 
 	.rating {
 		grid-row: 3;
@@ -110,31 +111,36 @@ body {
 
 .back {
 	transform: rotateY(180deg);
-	background-color: #fff;
+	background-color: #f8e9e9;
 	border: 2px solid rgb(240, 240, 240);
 	.inner {
-		grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+		grid-template-rows: 1fr 0fr 0fr 0fr 14fr 1fr 1fr;
 		grid-template-columns: repeat(4, auto);
 		grid-column-gap: 0.8em;
 		justify-items: center;
 	}
-
+p{
+    text-indent: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
 	.description {
+        font-family: 'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
 		grid-row: 5;
 		grid-column: 1/-1;
-		font-size: 0.86em;
+		font-size: 0.90em;
 		border-radius: 5px;
-		font-weight: 600;
-		line-height: 1.4em;
+		font-weight: 500;
+		line-height: 1.5em;
 		overflow: auto;
-		color: #355cc9;
+		color: #ae2828;
 		padding-right: 10px;
 	}
 
 	.location,
 	.price {
 		font-weight: 600;
-		color: #355cc9;
+		color: #ae2828;
 		grid-row: 1;
 		font-size: 0.86em;
 	}
@@ -180,16 +186,16 @@ body {
 		background-color: #fff;
 		box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 		text-shadow: none;
-		color: #355cc9;
+		color: #cd1361;
 	}
 
 	&.return {
 		line-height: 3em;
-		color: #355cc9;
-		border-color: #355cc9;
+		color: #cd1361;
+		border-color: #fba9db;
 		text-shadow: none;
 		&:hover {
-			background-color: #355cc9;
+			background-color: #cd1361;
 			color: #fff;
 			box-shadow: none;
 		}
